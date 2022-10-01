@@ -5,6 +5,9 @@
 include_once '../configuraciones/db.php';
 $conexionDB=DB::crearInstancia();
 
-print_r($_POST);
+$consulta=$conexionDB->prepare("SELECT * FROM cursos");
+$consulta->execute();
+$listaCursos=$consulta->fetchAll();
+
 
 ?>

@@ -53,11 +53,13 @@
                 </tr>
               </thead>
               <tbody>
-                <tr class="">
-                  <td>1</td>
-                  <td>Sitio web con PHP</td>
-                  <td>Seleccionar</td>
-                </tr>
+                <?php foreach($listaCursos as $curso){ ?>
+                  <tr>
+                    <td><?php echo $curso['id']; ?></td>
+                    <td><?php echo $curso['nombre_curso']; ?></td>
+                    <td>Seleccionar</td>
+                  </tr>
+                <?php } ?>
               </tbody>
             </table>
           </div>
