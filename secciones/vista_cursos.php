@@ -16,22 +16,27 @@
               <div class="card-body">
                 <div class="mb-3">
                   <label for="" class="form-label">ID</label>
+                  <!-- formulario de entrada del id del curso -->
                   <input type="text"
                     class="form-control"
                     name="id"
                     id="id"
+                    value="<?php echo $id; ?>"
                     aria-describedby="helpId"
                     placeholder="ID">
                 </div>
                 <div class="mb-3">
                   <label for="nombre_curso" class="form-label">Nombre del curso</label>
+                  <!-- formulario de entrada del nombre del curso -->
                   <input type="text"
                     class="form-control"
                     name="nombre_curso"
                     id="nombre_curso"
+                    value="<?php echo $nombre_curso; ?>"
                     aria-describedby="helpId"
                     placeholder="Curso">
                 </div>
+                <!-- botones de agregar, editar y borrar -->
                 <div class="btn-group" role="group" aria-label="Button group name">
                   <button type="submit" name="accion" value="agregar" class="btn btn-success">Agregar</button>
                   <button type="submit" name="accion" value="editar" class="btn btn-info">Editar</button>
